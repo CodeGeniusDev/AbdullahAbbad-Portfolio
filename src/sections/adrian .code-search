@@ -1,0 +1,18 @@
+# Query: adrian 
+# ContextLines: 1
+
+3 results - 2 files
+
+index.html:
+  6      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  7:     <title>Aqsa Abbas</title>
+  8    </head>
+
+README.md:
+  406      review:
+  407:       'Working with Aqsa was a fantastic experience. She transformed our outdated website into a modern, user-friendly platform. Her attention to detail and commitment to quality are unmatched. Highly recommend her for any web dev projects.',
+  408    },
+
+  430      review:
+  431:       'Aqsa was a pleasure to work with. She understood our requirements perfectly and delivered a website that exceeded our expectations. Her skills in both frontend backend dev are top-notch.',
+  432    },
