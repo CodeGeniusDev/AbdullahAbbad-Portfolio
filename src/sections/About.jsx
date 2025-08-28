@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(' aqsaabbas9449@gmail.com');
+    navigator.clipboard.writeText('abdullahabbad916@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -20,13 +20,18 @@ const About = () => {
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img
+              src="assets/abdullah.png"
+              alt="grid-1"
+              className="w-full rounded-xl sm:h-[276px] h-fit object-contain"
+            />
 
             <div>
-              <p className="grid-headtext">Hi, I’m Aqsa Abbas</p>
-<p className="grid-subtext">
-  Passionate web developer specializing in React, Node.js, and creative UI/UX designs.
-</p>
+              <p className="grid-headtext">Hi, I’m Abdullah Abbad</p>
+              <p className="grid-subtext">
+                Passionate web developer specializing in React, Next.js, Node.js, MongoDB, TailwindCSS, Three.js,
+                WordPress, and creative UI/UX & graphic designs.
+              </p>
             </div>
           </div>
         </div>
@@ -38,7 +43,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-  Skilled in HTML, CSS, JavaScript, React.js, Node.js, MongoDB,wordpress customization and Three.js for interactive 3D experiences.
+                Skilled in HTML, CSS, JavaScript, React.js, Next.js, Node.js, MongoDB, WordPress customization, and
+                Three.js for interactive 3D experiences. Proficient in Figma for design work.
               </p>
             </div>
           </div>
@@ -50,6 +56,7 @@ const About = () => {
               <Globe
                 height={326}
                 width={326}
+                className="cursor-grab"
                 backgroundColor="rgba(0, 0, 0, 0)"
                 backgroundImageOpacity={0.5}
                 showAtmosphere
@@ -60,9 +67,20 @@ const About = () => {
               />
             </div>
             <div>
-              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Lahore, Pakistan and open to remote work worldwide.</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <p className="grid-headtext">I’m flexible with time zones and locations for communication</p>
+              <p className="grid-subtext">Based in Lahore, Pakistan, and available for remote work worldwide.</p>
+
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault(); // URL change hone se roka
+                  const section = document.querySelector('#contact');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}>
+                <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              </a>
             </div>
           </div>
         </div>
@@ -74,8 +92,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Passion for Coding</p>
               <p className="grid-subtext">
-                I love solving problems and building things through code. Programming isn&apos;t just my
-                profession—it&apos;s my passion. I enjoy exploring new technologies, and enhancing my skills.
+                I enjoy solving problems and creating things with code. Programming is not just my job-it’s my passion.
+                I love exploring new technologies and improving my skills.
               </p>
             </div>
           </div>
@@ -93,7 +111,9 @@ const About = () => {
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">aqsaabbas9449@gmail.com</p>
+                <p className="lg:text-xl md:text-lg font-medium text-gray_gradient text-white">
+                  abdullahabbad916@gmail.com
+                </p>
               </div>
             </div>
           </div>

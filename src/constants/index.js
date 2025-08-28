@@ -44,6 +44,25 @@ export const myProjects = [
       { id: 3, name: 'Three.js', path: '/assets/typescript.png' },
     ],
   },
+  {
+    title: 'personal website',
+    desc: 'This is my 3D interactive portfolio created using Three.js and React, showcasing my skills and projects.',
+    subdesc: 'Built with Vite, Tailwind CSS, and Framer Motion.',
+    href: '#work',
+    texture: '/textures/project/project1.mp4',
+    logo: '/assets/project-logo1.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      { id: 1, name: 'React.js', path: '/assets/react.svg' },
+      { id: 2, name: 'TailwindCSS', path: 'assets/tailwindcss.png' },
+      { id: 3, name: 'Three.js', path: '/assets/typescript.png' },
+    ],
+  },
   // Add more personal projects if you like
 ];
 
@@ -51,9 +70,10 @@ export const workExperiences = [
   {
     id: 1,
     name: 'Freelance Projects',
-    pos: 'Fullstack Developer',
-    duration: '2024 - Present',
-    title: 'Working on various web projects using React, TailwindCSS and Three.js.',
+    pos: 'FullStack Developer',
+    duration: '2023 - Present',
+    title:
+      'Working on various web projects using React, Next.js, TailwindCSS, Three.js, Node.js, MongoDB, and UI/UX design.',
     icon: '/assets/framer.svg',
     animation: 'victory',
   },

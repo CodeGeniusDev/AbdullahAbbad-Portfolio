@@ -6,13 +6,25 @@ const NavItems = ({ onClick = () => {} }) => (
   <ul className="nav-ul">
     {navLinks.map((item) => (
       <li key={item.id} className="nav-li">
-        <a href={item.href} className="nav-li_a" onClick={onClick}>
+        <a
+          href={item.href}
+          className="nav-li_a"
+          onClick={(e) => {
+            e.preventDefault(); // URL me /#about add hone se rokta hai
+            const section = document.querySelector(item.href);
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+            onClick(); // tumhara custom onClick bhi chalega
+          }}
+        >
           {item.name}
         </a>
       </li>
     ))}
   </ul>
 );
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +37,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-            Aqsa
+            Abdullah Abbad
           </a>
 
           <button

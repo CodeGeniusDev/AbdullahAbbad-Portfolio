@@ -52,11 +52,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space my-20" id="contact">
+    <section className="c-space my-20 pt-20" id="contact">
       {alert.show && <Alert {...alert} />}
 
       <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
+        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute -top-14 inset-0 h-[55rem]" />
 
         <div className="contact-container">
           <h3 className="head-text">Let's talk</h3>
